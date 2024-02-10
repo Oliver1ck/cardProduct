@@ -39,7 +39,8 @@
 }
 
 .about__product-img-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80% 1fr; 
     gap: 10px;
 }
 
@@ -57,7 +58,6 @@
 
 .about__product-img-list {
     display: flex;
-    flex: 0 1 55px;
     flex-direction: column;
     gap: 5px;
 }

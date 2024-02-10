@@ -700,7 +700,8 @@
 }
 
 .about__product-img-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 80% 1fr;
   gap: 10px;
 }
 
@@ -719,7 +720,6 @@
 
 .about__product-img-list {
   display: flex;
-  flex: 0 1 55px;
   flex-direction: column;
   gap: 5px;
 }
@@ -1116,7 +1116,8 @@
 }
 
 .articles {
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 72px;
 }
 
 .articles__title {
@@ -1333,6 +1334,10 @@
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .slider__item-title:hover {
   color: var(--Icon-Highlight, #00a0ac);
